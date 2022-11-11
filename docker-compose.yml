@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  nginx:
+    restart: always
+    image: nginx
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+  tech-domains-btc:
+    image: hussu010/tech-domains-btc
+    env_file: .env
