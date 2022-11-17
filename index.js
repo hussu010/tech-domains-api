@@ -11,7 +11,7 @@ const domainRouter = require("./src/routes/domain");
 
 app.enable("trust proxy");
 app.use(cors());
-app.use(paginate.middleware(20, 60));
+// app.use(paginate.middleware(12, 48));
 app.use(morgan("tiny"));
 app.use(express.json());
 
